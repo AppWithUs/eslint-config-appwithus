@@ -20,10 +20,18 @@
     "url": "https://github.com/AppWithUs/eslint-config-appwithus/issues"
   },
   "homepage": "https://github.com/AppWithUs/eslint-config-appwithus#readme",
+  "dependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "eslint-plugin-react": "^7.8.2"
+  },
   "peerDependencies": {
     "eslint": ">= 4.19.1",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-react": "^7.9.1",
-    "eslint-plugin-react-native": "^3.2.1"
+    "prettier": "^1.13.5"
   }
 }
