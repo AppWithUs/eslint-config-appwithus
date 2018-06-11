@@ -6,19 +6,23 @@
 
     `npm info "eslint-config-appwithus@latest" peerDependencies`
 
-3. Add the following to your `.eslintrc`
+3. Add the following to your `.eslintrc` depending on your platform
 
    ```
    {
-     "extends": "appwithus"
+     "extends": "appwithus/native"
    }
    ```
-   If you’re using React Native, add the React Native extension as follows:
    ```
    {
-     "extends": [
-       "appwithus",
-       "appwithus/reactnative"
-     ]
+     "extends": "appwithus/browser"
    }
    ```
+
+   ```
+   {
+     "extends": "appwithus/node"
+   }
+   ```
+
+As soon as you add a `prettier.rc` you'll overwrite the prettier-config, even if your file is empty,
