@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/AppWithUs/eslint-config-appwithus.git"
   },
-  "keywords": ["eslint", "codestyle"],
+  "keywords": [
+    "eslint",
+    "codestyle"
+  ],
   "author": "AppWithUs GmbH",
   "license": "ISC",
   "bugs": {
