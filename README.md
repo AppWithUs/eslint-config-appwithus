@@ -13,4 +13,12 @@
      "extends": "appwithus"
    }
    ```
-
+   If you’re using React Native, add the React Native extension as follows:
+   ```
+   {
+     "extends": [
+       "appwithus",
+       "appwithus/reactnative"
+     ]
+   }
+   ```
