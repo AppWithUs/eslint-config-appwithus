@@ -1,51 +1,20 @@
 module.exports = {
   parser: "babel-eslint",
-
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'ecmaFeatures': {
+      'jsx': true,
+    },
+  },
   env: {
     es6: true
   },
 
-  plugins: ["react"],
-  globals: {
-    __BUNDLE_START_TIME__: false,
-    __DEV__: true,
-    __dirname: false,
-    __filename: false,
-    __fbBatchedBridgeConfig: false,
-    fetch: false,
-    alert: false,
-    cancelAnimationFrame: false,
-    clearImmediate: true,
-    clearInterval: false,
-    clearTimeout: false,
-    console: false,
-    document: false,
-    escape: false,
-    exports: false,
-    global: false,
-    jest: false,
-    pit: false,
-    Map: true,
-    module: false,
-    navigator: false,
-    process: false,
-    Promise: false,
-    requestAnimationFrame: true,
-    require: false,
-    Set: true,
-    setImmediate: true,
-    setInterval: false,
-    setTimeout: false,
-    window: false,
-    FormData: true,
-    XMLHttpRequest: false,
-
-    // Flow "known-globals" annotations:
-    ReactElement: false,
-    ReactClass: false,
-    Class: false
-  },
-
+  plugins: [
+    "import",
+    "react",
+    "react-native"
+  ],
   rules: {
     "comma-dangle": 0, // disallow trailing commas in object literals
     "no-cond-assign": 1, // disallow assignment in conditional expressions
@@ -188,6 +157,27 @@ module.exports = {
     "space-unary-ops": [1, { words: true, nonwords: false }], // require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     "max-nested-callbacks": 0, // specify the maximum depth callbacks can be nested (off by default)
     "one-var": 0, // allow just one var statement per function (off by default)
-    "wrap-regex": 0 // require regex literals to be wrapped in parentheses (off by default)
+    "wrap-regex": 0, // require regex literals to be wrapped in parentheses (off by default)
+
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 0,
+    "jsx-quotes": [1, "prefer-double"],
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-multi-comp": 0,
+    "react/no-unknown-property": 0,
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/self-closing-comp": 1,
+    "react/wrap-multilines": 0,
+    "react/jsx-no-undef": 2,
+
+    // React Native
+    "react-native/no-unused-styles": 1,
+    "react-native/no-inline-styles": 1,
+    "react-native/no-color-literals": 2,
   }
 };
