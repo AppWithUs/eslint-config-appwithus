@@ -174,10 +174,5 @@ module.exports = {
     "react/self-closing-comp": 1,
     "react/wrap-multilines": 0,
     "react/jsx-no-undef": 2,
-
-    // React Native
-    "react-native/no-unused-styles": 1,
-    "react-native/no-inline-styles": 1,
-    "react-native/no-color-literals": 2,
   }
 };

@@ -1,10 +1,9 @@
 
 module.exports = {
-
+  extends: "appwithus",
   plugins: [
     "react-native"
   ],
-  extends: "appwithus",
   rules: {
     // React Native
     "react-native/no-unused-styles": 1,
