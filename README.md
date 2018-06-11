@@ -10,7 +10,7 @@
 
    ```
    {
-     "extends": "eslint-config-appwithus"
+     "extends": "appwithus"
    }
    ```
 
