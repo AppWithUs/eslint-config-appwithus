@@ -17,16 +17,10 @@
     "url": "https://github.com/AppWithUs/eslint-config-appwithus/issues"
   },
   "homepage": "https://github.com/AppWithUs/eslint-config-appwithus#readme",
-  "dependencies": {
-    "my_dep": "^1.0.0"
-  },
-  "devDependencies" : {
-    "my_test_framework": "^3.1.0"
-  },
   "peerDependencies": {
     "eslint": ">= 4.19.1",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.9.1",
-    "eslint-plugin-react-native": "^3.2.1",
+    "eslint-plugin-react-native": "^3.2.1"
   }
 }
