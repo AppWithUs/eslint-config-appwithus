@@ -13,12 +13,11 @@
      "extends": "appwithus"
    }
    ```
-   If you’re using React Native, add the React Native extension as follows:
+   If you’re using React Native, add the React Native extension as follows: other tags are `browser` | `node` 
    ```
    {
      "extends": [
-       "appwithus",
-       "appwithus/reactnative"
+       "appwithus/native"
      ]
    }
    ```
