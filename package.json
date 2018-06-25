@@ -7,6 +7,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
+    "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -39,19 +40,27 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-prettier": "^2.6.1",
-    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-react-native": "^3.2.1",
     "lodash.merge": "^4.6.1"
   },
   "peerDependencies": {
     "eslint": "5.0.0",
-    "prettier": "^1.13.5"
+    "prettier": "^1.13.6"
   },
   "devDependencies": {
     "eslint": "5.0.0",
-    "prettier": "^1.13.5"
+    "husky": "^1.0.0-rc.9",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.6"
   },
   "engines": {
     "node": "10.3.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint . --fix",
+      "git add"
+    ]
   }
 }
