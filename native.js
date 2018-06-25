@@ -1,12 +1,6 @@
 module.exports = {
-  extends: [
-    "./core/shared.js",
-    "./core/react.js",
-    "./core/prettier.js"
-  ],
-  plugins: [
-    "react-native"
-  ],
+  extends: ['./lib/core.js', './lib/react.js', './lib/prettier.js'],
+  plugins: ['react-native'],
   globals: {
     __DEV__: false,
     Atomics: false,
@@ -30,10 +24,5 @@ module.exports = {
     setTimeout: false,
     window: false,
   },
-  rules: {
-    // React Native
-    "react-native/no-unused-styles": 1,
-    "react-native/no-inline-styles": 1,
-    "react-native/no-color-literals": 2,
-  }
+  rules: require('./lib/rules/native'),
 };

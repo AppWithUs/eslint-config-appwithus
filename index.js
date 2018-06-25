@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./core/shared.js', './core/prettier.js'],
+  extends: ['./lib/core.js', './lib/prettier.js'],
 };

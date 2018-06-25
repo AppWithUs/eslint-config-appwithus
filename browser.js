@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ['./core/shared.js', './core/react.js', './core/prettier.js'],
+  extends: ['./lib/core.js', './lib/react.js', './lib/prettier.js'],
   env: { browser: true, commonjs: true },
 };
