@@ -2,7 +2,7 @@
   "name": "eslint-config-appwithus",
   "author": "AppWithUs (hello@appwith.us)",
   "license": "ISC",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "ESLint config of AppWithUs GmbH",
   "main": "index.js",
   "scripts": {
